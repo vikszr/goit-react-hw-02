@@ -6,7 +6,7 @@ export default function Feedback({ feedback, totalFeedback }) {
       <p>Bad:{feedback.bad}</p>
       {totalFeedback > 0 && <p>Total: {totalFeedback}</p>}
       {totalFeedback > 0 && (
-        <p>Total: {Math.round((feedback.good / totalFeedback) * 100)}%</p>
+        <p>Positive: {Math.round((feedback.good / totalFeedback) * 100)}%</p>
       )}
     </div>
   );
